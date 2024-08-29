@@ -18,7 +18,7 @@ function cartRender(){
             div.className = "list-item";
             
             const img = document.createElement('img');
-            img.src = `/image/${e[0].image}`;
+            img.src = `./image/${e[0].image}`;
             img.style.width = '150px';
             img.style.height = '150px';
     

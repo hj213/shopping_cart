@@ -1,5 +1,5 @@
 async function loadFruitData(){
-    const response = await axios.get('/data.json');
+    const response = await axios.get('./data.json');
     const data = response.data;
     localStorage.setItem('fruitData', JSON.stringify(data));
     
@@ -64,7 +64,7 @@ function handleClick(e) {
     const data = JSON.parse(localStorage.getItem('fruitData'));
 
     localStorage.setItem("clickedItem", JSON.stringify(data.filter(e=> e.id == clickedId)[0]));
-    window.location.href = "detail.html"
+    window.location.href = "./detail.html"
 
 
 }
