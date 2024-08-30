@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // console.log(fruit);
 
     if (fruit) {
-        document.getElementById('fruit-image').src = `//image/${fruit.image}`;
+        document.getElementById('fruit-image').src = `./image/${fruit.image}.jpg`;
         document.getElementById('fruit-image').alt = fruit.name;
         document.getElementById('fruit-name').textContent = fruit.name;
         document.getElementById('fruit-price').textContent = `가격: ${fruit.price.toLocaleString()}원`;
